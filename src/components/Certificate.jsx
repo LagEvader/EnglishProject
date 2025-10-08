@@ -19,7 +19,7 @@ function Certificate() {
   ];
 
   return (
-    <section className="bg-black py-16 px-6 text-white">
+    <section id="certificate" className="bg-black py-20 px-6 text-white">
       <h3 className="text-3xl font-bold text-center mb-10 text-cyberRed">
         Certificates
       </h3>

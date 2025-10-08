@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 function Contact() {
   return (
-    <section className="py-16 px-6 max-w-4xl mx-auto">
+    <section id='contact' className="py-20 px-6 max-w-4xl mx-auto">
       <h3 className="text-3xl font-bold text-center mb-6 text-cyberRed">
         Contact Me
       </h3>
@@ -24,6 +27,30 @@ function Contact() {
           Send Message
         </button>
       </form>
+      <div className="flex justify-center flex-wrap md:gap-15 mt-3">
+        <div className="text-center p-1">
+          <a
+            href="https://www.instagram.com/lagevade?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            id="instagram"
+            target="_blank"
+            className="text-red-700 md:text-4xl"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <p>Lagevade</p>
+        </div>
+        <div className="text-center p-1">
+          <a
+            href="https://www.instagram.com/bid_battle_store/?utm_source=ig_web_button_share_sheet"
+            id="instagram"
+            target="_blank"
+            className="text-red-700 md:text-4xl"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <p>Bid Battle Store</p>
+        </div>
+      </div>
     </section>
   );
 }
